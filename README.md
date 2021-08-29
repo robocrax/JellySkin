@@ -5,8 +5,11 @@
   <h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
 </div>
 <br>
-## How to use
-To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using a reverse proxy due to Content-Security-Policy. See fix below.
+<h3>How to use</h3>
+
+To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. 
+
+<b>NOTE: Theme may not work when using a reverse proxy due to Content-Security-Policy. See fix below.</b>
   
   
 Merged theme from here, there and a few tweaks:
