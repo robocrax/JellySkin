@@ -93,3 +93,18 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
       margin-bottom: 1rem;
   }
 ```
+
+To fix theme not loading behind a reverse-proxy, add this **Content-Security-Policy** to your headers
+
+```
+default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/gh/prayag17/JellySkin/ https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/ https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/ https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons@latest/Font%20Awesome/ https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/ https://pro.fontawesome.com/releases/v5.15.3/css/; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'
+```
+
+I use Caddy 2 as my proxy so my config file would be:
+
+```
+jellyfin.domain.tld {
+    header Content-Security-Policy "default-src https: data: blob: http://image.tmdb.org; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/gh/prayag17/JellySkin/ https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/ https://cdn.jsdelivr.net/gh/prayag17/JellySkin/addons/Gradients/ https://cdn.jsdelivr.net/gh/prayag17/Jellyfin-Icons@latest/Font%20Awesome/ https://cdn.jsdelivr.net/gh/CTalvio/Ultrachromic/ https://pro.fontawesome.com/releases/v5.15.3/css/; script-src 'self' 'unsafe-inline' https://www.gstatic.com/cv/js/sender/v1/cast_sender.js https://www.youtube.com blob:; worker-src 'self' blob:; connect-src 'self'; object-src 'none'; frame-ancestors 'self'"
+    reverse_proxy localhost:8096
+}
+```
