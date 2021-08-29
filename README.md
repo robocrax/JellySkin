@@ -99,7 +99,7 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   .section0 button.itemAction.textActionButton {
       height: auto;
   }
-  .section3 button.itemAction.textActionButton {   /* apply to the 4th home section */
+  .section3 button.itemAction.textActionButton {   /* apply to the 4th home section *
       height: 2em;
   } */
 ```
