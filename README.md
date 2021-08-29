@@ -2,7 +2,7 @@
   <h1>JellySkin</h1>
   <p>My version of prayag17's skin with additional customizations from other places</p>
   <h3>Use 67% or 70% zoom in web browser for better experience</h3>
-  <h4>Note: To take full experience of this CSS on FireFox scroll down below to find the necessary settings.</h4>
+  <p>I personally don't see the need to zoom out that much as theme works great out of box, this is personal preference</p>
 </div>
 <br>
 <h3>How to use</h3>
@@ -12,7 +12,7 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
 <b>NOTE: Theme may not work when using a reverse proxy due to Content-Security-Policy. See fix below.</b>
   
   
-Merged theme from here, there and a few tweaks:
+<p>My compiled version. Merged main theme from here, another component there and a few tweaks:</p>
   
 ```css
   @import url("https://cdn.jsdelivr.net/gh/prayag17/JellySkin/default.css");
