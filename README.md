@@ -35,10 +35,10 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
       height: 100%;
   }
 
-  
-  /* PR already created so should be fixed in near future but just in case */
-  .navMenuOption .navMenuOptionIcon {
-    width: 1.3em;
+
+  .navMenuOption .navMenuOptionIcon,
+  .listItemIcon.material-icons {
+    width: 1em !important;
   }
   .dashboardSection .sectionTitleTextButton>.material-icons {
       margin-left: .5em;
@@ -93,6 +93,15 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   .layout-mobile #loginPage .padded-left.padded-right.padded-bottom-page {
       margin-bottom: 1rem;
   }
+  
+  
+  /* Realised My Media section is not first in my setup, uncomment this code to change yours (if yours isn't the first as well, default not required) *
+  .section0 button.itemAction.textActionButton {
+      height: auto;
+  }
+  .section3 button.itemAction.textActionButton {   /* apply to the 4th home section */
+      height: 2em;
+  } */
 ```
 
 To fix theme not loading behind a reverse-proxy, add this **Content-Security-Policy** to your headers
