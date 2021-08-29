@@ -50,7 +50,8 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   }
 
 
-  .layout-mobile .overflowPortraitCard, .layout-mobile .overflowSquareCard {
+  .layout-mobile .vertical-wrap>.overflowPortraitCard, 
+  .layout-mobile .vertical-wrap>.overflowSquareCard {
       width: 50% !important;
   }
 
