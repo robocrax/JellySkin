@@ -102,6 +102,17 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   .section3 button.itemAction.textActionButton {   /* apply to the 4th home section *
       height: 2em;
   } */
+  
+  
+  
+  /* Admin dashboard progress fix because of excessive use of !important 😂 */
+  .transcodingProgress>.itemProgressBarForeground {
+      background: #dd4919 !important;
+  }
+  .backgroundProgress>.itemProgressBarForeground {
+      background: #303030 !important;
+  }
+
 ```
 
 To fix theme not loading behind a reverse-proxy, add this **Content-Security-Policy** to your headers
