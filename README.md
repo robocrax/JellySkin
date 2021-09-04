@@ -1,6 +1,6 @@
 <div align="center">
   <h1>JellySkin</h1>
-  <p>My version of prayag17's skin with additional customizations from other places</p>
+  <p>My version of prayag17's skin with additional customizations from other places including <a href="https://github.com/CTalvio/Ultrachromic">CTalvio</a></p>
   <h3>Use 67% or 70% zoom in web browser for better experience</h3>
   <p>I personally don't see the need to zoom out that much as theme works great out of box, this is personal preference</p>
 </div>
