@@ -58,9 +58,6 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   .layout-mobile #itemDetailPage .cardBox {
       margin: .5em;
   }
-  .padded-right {
-      padding-right: 0;   /* to overcome the slider occupying the space but sliders new-tech so minimal */
-  }
   .layout-mobile .detailPageWrapperContainer {
       width: 93%;
       margin: 20px auto 0;
@@ -113,6 +110,22 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
       background: #303030 !important;
   }
 
+  .padded-right-withalphapicker {
+      padding-right: 3.5% !important;
+  }
+
+  /* some content in dashboard got trimmed */
+  .layout-mobile .dashboardDocument .listItemBodyText {
+      max-width: none !important;
+  }
+
+  /* series Seasons horizonal scroller did not have the "seamless" effect */
+  .layout-mobile #childrenContent .hiddenScrollX {
+      -webkit-mask: linear-gradient(to left,transparent,black 15px calc(100% - 15px),transparent);
+      mask: linear-gradient(to left,transparent,black 15px calc(100% - 15px),transparent);
+      padding-left: 3.3%;
+      padding-right: 3.3%;
+  }
 ```
 
 To fix theme not loading behind a reverse-proxy, add this **Content-Security-Policy** to your headers
