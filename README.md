@@ -113,7 +113,9 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   .padded-right-withalphapicker {
       padding-right: 3.5% !important;
   }
-
+  .layout-mobile .detailPageWrapperContainer .itemsContainer.padded-right {
+  	padding-right: 0 !important;
+  }
   /* some content in dashboard got trimmed */
   .layout-mobile .dashboardDocument .listItemBodyText {
       max-width: none !important;
