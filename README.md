@@ -98,8 +98,19 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
   }
   .section3 button.itemAction.textActionButton {   /* apply to the 4th home section *
       height: 2em;
-  } */
+  } 
   
+  /* Additional changes to hide subtitle as poster already containes same text */
+  .section3 .cardBox .cardText.cardTextCentered.cardText-first {
+    display: none;
+  }
+  .section3 .cardBox .cardScalable {
+    border-radius: 10px !important;
+  }
+  .section3 .cardBox .cardScalable .cardPadder.cardPadder-overflowBackdrop {
+    padding-bottom: 60% !important;
+  }
+  */
   
   
   /* Admin dashboard progress fix because of excessive use of !important 😂 */
