@@ -100,7 +100,7 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
       height: 2em;
   } 
   
-  /* Additional changes to hide subtitle as poster already containes same text */
+  /* Additional changes to hide subtitle as poster already containes same text *
   .section3 .cardBox .cardText.cardTextCentered.cardText-first {
     display: none;
   }
