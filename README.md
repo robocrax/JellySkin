@@ -139,6 +139,10 @@ To use the JellySkin theme copy the line below into "Dashboard -> General -> Cus
       padding-left: 3.3%;
       padding-right: 3.3%;
   }
+  
+  .layout-mobile #itemDetailPage .listItem {
+	  background: #333;
+  }
 ```
 
 To fix theme not loading behind a reverse-proxy, add this **Content-Security-Policy** to your headers
